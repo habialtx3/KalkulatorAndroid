@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MASUKKAN DUA ANGKA"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/angkapertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:ems="20"
+        android:inputType="number"
+        android:text="Masukkan angka pertama"
+        android:textSize="40px" />
+
+    <EditText
+        android:id="@+id/angkakedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkapertama"
+        android:ems="48"
+        android:inputType="number"
+        android:text="Masukkan angka kedua"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkakedua"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkakedua"
+        android:layout_toRightOf="@id/tambah"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/kali"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkakedua"
+        android:layout_toLeftOf="@id/kurang"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angkakedua"
+        android:layout_toLeftOf="@id/kali"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btnBersih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bersihkan"
+        android:layout_below="@id/tambah"/>
+
+    <TextView
+        android:id="@+id/textHasil"
+        style="@style/Widget.Material3.SearchView.Prefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBersih"
+        android:layout_centerHorizontal="true"
+        android:text="HASIL"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/valueHasil"
+        style="@style/Widget.Material3.SearchView.Prefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHasil"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
