@@ -21,8 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/judul"
         android:ems="20"
+        android:hint="Masukkan angka pertama"
         android:inputType="number"
-        android:text="Masukkan angka pertama"
         android:textSize="40px" />
 
     <EditText
@@ -31,8 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/angkapertama"
         android:ems="48"
+        android:hint="Masukkan angka kedua"
         android:inputType="number"
-        android:text="Masukkan angka kedua"
         android:textSize="40px" />
 
     <Button
@@ -40,6 +40,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_width="wrap_content"
+        android:layout_marginHorizontal="4dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/angkakedua"
         android:text="+" />
@@ -49,6 +50,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/angkakedua"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@id/tambah"
         android:text="-" />
 
@@ -59,6 +62,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
         android:layout_below="@id/angkakedua"
         android:layout_toLeftOf="@id/kurang"
         android:text="x" />
@@ -68,6 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/angkakedua"
+        android:layout_marginHorizontal="4dp"
         android:layout_toLeftOf="@id/kali"
         android:text="/" />
 
